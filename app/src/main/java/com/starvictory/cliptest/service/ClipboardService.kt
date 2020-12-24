@@ -6,7 +6,9 @@ import android.content.ClipboardManager.OnPrimaryClipChangedListener
 import android.content.Intent
 import android.os.IBinder
 import android.util.Log
-
+/**
+ * Created by zhb5145 on 2020/12/24
+ */
 class ClipboardService : Service() {
 
     private var mClipboardManager: ClipboardManager? = null
@@ -27,7 +29,7 @@ class ClipboardService : Service() {
     }
 
     private val changedListener = OnPrimaryClipChangedListener {
-        Log.d("delf", "[SYSTEM] clipboard changing detected")
+        Log.d("zhb5145", "[SYSTEM] clipboard changing detected")
 
     }
 }
